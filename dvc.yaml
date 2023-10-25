@@ -1,0 +1,9 @@
+stages:
+  load:
+    cmd: load python src/load.py --config=params.yaml
+    deps:
+    - src/load.py
+    params:
+    - base
+    outs:
+    - data/processed.csv
