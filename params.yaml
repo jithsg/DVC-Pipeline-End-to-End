@@ -11,7 +11,7 @@ data:
 
 training:
   clf_params:
-    'C': .001
+    'C': .002
     'solver': 'lbfgs'
     'multi_class': 'multinomial'
     'max_iter': 100
