@@ -113,7 +113,7 @@ stages:
           random_state: 42
         training:
           clf_params:
-            C: 0.002
+            C: 0.001
             solver: lbfgs
             multi_class: multinomial
             max_iter: 100
@@ -121,7 +121,7 @@ stages:
     outs:
     - path: model/model.pkl
       hash: md5
-      md5: ff9ed031ef623b22fc56fdb2e5a402d2
+      md5: 1bd503d001a5182d7a89a681fb36e93a
       size: 991
   eval:
     cmd: python src/eval.py --config=params.yaml
@@ -132,7 +132,7 @@ stages:
       size: 1492
     - path: model/model.pkl
       hash: md5
-      md5: ff9ed031ef623b22fc56fdb2e5a402d2
+      md5: 1bd503d001a5182d7a89a681fb36e93a
       size: 991
     - path: src/eval.py
       hash: md5
