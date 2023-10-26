@@ -56,7 +56,8 @@ stages:
     - data
     - reports
     outs:
-    - eval/metrics.json
     - eval/confusion_matrix.png
-
+    metrics:
+    - eval/metrics.json:
+        cache: false
   
